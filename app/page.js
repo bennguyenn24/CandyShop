@@ -25,7 +25,9 @@ const Home = () => {
             <Image src={product.Image} alt={product.name} width={300} height={300} />
             <p className='mt-5'>Price: ${product.price}</p>
             <div className='mt-4'>
-              <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+              <button onClick={(() => {
+                checkout()
+              })} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
                 Add to Cart
               </button>
             </div>
